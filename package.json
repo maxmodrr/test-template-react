@@ -1,0 +1,41 @@
+{
+  "name": "template-react",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "lint": "npm run lint:js && npm run lint:styles",
+    "lint:js": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "lint:styles": "stylelint \"**/*.{css,scss}\" --quiet",
+    "format": "prettier --check .",
+    "format:write": "prettier --write .",
+    "fix": "npm run lint:js -- --fix && npm run lint:styles -- --fix && npm run format:write"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.0",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "eslint": "^9.25.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.3",
+    "stylelint": "^15.10.3",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-config-standard-scss": "^11.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.6.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.30.1",
+    "vite": "^6.3.5"
+  }
+}
